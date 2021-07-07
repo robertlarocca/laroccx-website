@@ -1,3 +1,3 @@
-# www.laroccx.com
+# robertlarocca.github.io
 
-This website is being migrated to GitHub Pages.
+The source code for my personal blog and website built using Hugo.

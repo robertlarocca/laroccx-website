@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on LaRoccx</title>
+    <link>https://laroccx.com/categories/</link>
+    <description>Recent content in Categories on LaRoccx</description>
+    <image>
+      <url>https://laroccx.com/robert_larocca.png</url>
+      <link>https://laroccx.com/robert_larocca.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jun 2021 03:15:00 -0400</lastBuildDate><atom:link href="https://laroccx.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>networking</title>
+      <link>https://laroccx.com/categories/networking/</link>
+      <pubDate>Sun, 20 Jun 2021 03:15:00 -0400</pubDate>
+      
+      <guid>https://laroccx.com/categories/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://laroccx.com/categories/security/</link>
+      <pubDate>Sun, 20 Jun 2021 03:15:00 -0400</pubDate>
+      
+      <guid>https://laroccx.com/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>self-hosted</title>
+      <link>https://laroccx.com/categories/self-hosted/</link>
+      <pubDate>Sun, 20 Jun 2021 03:15:00 -0400</pubDate>
+      
+      <guid>https://laroccx.com/categories/self-hosted/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server</title>
+      <link>https://laroccx.com/categories/server/</link>
+      <pubDate>Sun, 20 Jun 2021 03:15:00 -0400</pubDate>
+      
+      <guid>https://laroccx.com/categories/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://laroccx.com/categories/development/</link>
+      <pubDate>Sun, 13 Jun 2021 14:47:22 -0400</pubDate>
+      
+      <guid>https://laroccx.com/categories/development/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

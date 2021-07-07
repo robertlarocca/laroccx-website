@@ -1,0 +1,140 @@
+baseURL: "https://laroccx.com/"
+title: "LaRoccx"
+publishDir: "docs"
+languageCode: en-us
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildExpired: false
+buildFuture: false
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # enable for google analytics, opengraph, twitter cards and schema
+  title: "LaRoccx"
+  # description: ""
+  keywords: ["blog", "hugo", linux", "open-source", "portfolio", "resume"]
+  author: ["Robert LaRocca"]
+  images: ["robert_larocca.png"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    disableHLJS: false
+    disableFingerprinting: false
+    favicon: ""
+    favicon16x16: ""
+    favicon32x32: ""
+    apple_touch_icon: "robert_larocca.png"
+    safari_pinned_tab: "robert_larocca.png"
+
+  label:
+    text: "Home"
+
+  profileMode:
+    enabled: true # must set explicitly to true or false
+    title: "Robert LaRocca"
+    subtitle: "Welcome to LaRoccx"
+    imageUrl: "robert_larocca.png"
+    imageWidth: 192
+    imageHeight: 192
+    imageTitle: "Robert LaRocca"
+    buttons:
+      - name: About
+        url: about/
+      - name: Resume
+        url: resume/
+
+  homeInfoParams:
+    Title: "Robert LaRocca"
+    Content: "Welcome to LaRoccx"
+
+  socialIcons:
+    - name: email
+      url: "mailto:robert@laroccx.com?subject=Hello World!"
+    - name: matrix
+      url: "https://matrix.to/#/@robert:laroccx.com"
+    - name: github
+      url: "https://github.com/robertlarocca"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/robert-larocca-a48bb4209"
+    - name: twitter
+      url: "https://twitter.com/robertlaroccx"
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "f456b632"
+  #   bing:
+  #     SiteVerificationTag: "f456b632"
+  #   yandex:
+  #     SiteVerificationTag: "f456b632"
+
+  # cover:
+  #   hidden: true # hide everywhere but not in structured data
+  #   hiddenInList: true # hide on list pages and home
+  #   hiddenInSingle: true # hide on single page
+
+  # editPost:
+  #   URL: "https://github.com/robertlarocca/laroccx.com/public"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  outputs:
+    home:
+      - HTML
+      - RSS
+      - JSON
+
+  fuseOpts: # see https://fusejs.io/api/options.html for search options
+    isCaseSensitive: false
+    includeMatches: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.3
+    minMatchCharLength: 2
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 50
