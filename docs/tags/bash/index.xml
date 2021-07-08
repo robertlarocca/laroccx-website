@@ -12,12 +12,12 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Jul 2021 03:45:00 -0400</lastBuildDate><atom:link href="https://www.laroccx.com/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bash Scripting Syntax</title>
-      <link>https://www.laroccx.com/posts/bash-scripting/</link>
+      <title>Bash Syntax Guide</title>
+      <link>https://www.laroccx.com/posts/bash-syntax/</link>
       <pubDate>Thu, 08 Jul 2021 03:45:00 -0400</pubDate>
       
-      <guid>https://www.laroccx.com/posts/bash-scripting/</guid>
-      <description>&lt;p&gt;This article servers more or less as a personal reminder and not a detailed user guide to getting started with Bash scripting. It does however include most of the syntax required to create Bash scripts.&lt;/p&gt;</description>
+      <guid>https://www.laroccx.com/posts/bash-syntax/</guid>
+      <description>&lt;p&gt;This post is more or less for my personal reference when I can&amp;rsquo;t remember something and not a detailed user guide for getting started with Bash scripting. It does however, include most of the syntax you&amp;rsquo;ll to create Bash scripts.&lt;/p&gt;</description>
     </item>
     
   </channel>

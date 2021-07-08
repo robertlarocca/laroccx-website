@@ -1,6 +1,6 @@
 ---
 author: "Robert LaRocca"
-title: "Bash Scripting Syntax"
+title: "Bash Syntax Guide"
 date: 2021-07-08T03:45:00-04:00
 categories:
   - development
@@ -12,7 +12,7 @@ tags:
 draft: false
 ---
 
-This article servers more or less as a personal reminder and not a detailed user guide to getting started with Bash scripting. It does however include most of the syntax required to create Bash scripts.
+This post is more or less for my personal reference when I can't remember something and not a detailed user guide for getting started with Bash scripting. It does however, include most of the syntax you'll to create Bash scripts.
 <!--more-->
 
 ### Example
@@ -155,13 +155,10 @@ DIR=${SRC%$BASE}	 # "/path/to/" (dirpath)
 | ----------------- | ------------------- |
 | `${FOO%suffix}`   | Remove suffix       |
 | `${FOO#prefix}`   | Remove prefix       |
-| ---               | ---                 |
 | `${FOO%%suffix}`  | Remove long suffix  |
 | `${FOO##prefix}`  | Remove long prefix  |
-| ---               | ---                 |
 | `${FOO/from/to}`  | Replace first match |
 | `${FOO//from/to}` | Replace all         |
-| ---               | ---                 |
 | `${FOO/%from/to}` | Replace suffix      |
 | `${FOO/#from/to}` | Replace prefix      |
 
@@ -241,7 +238,7 @@ for i in {1..5}; do
 done
 ```
 
-#### Step Size
+### Step Size
 
 ```bash
 for i in {5..50..5}; do
@@ -340,16 +337,13 @@ Using `[[` is actually a command-line program that returns either `0` (true) or 
 | `[[ -n STRING ]]`        | Not empty string      |
 | `[[ STRING == STRING ]]` | Equal                 |
 | `[[ STRING != STRING ]]` | Not Equal             |
-| ---                      | ---                   |
 | `[[ NUM -eq NUM ]]`      | Equal                 |
 | `[[ NUM -ne NUM ]]`      | Not equal             |
 | `[[ NUM -lt NUM ]]`      | Less than             |
 | `[[ NUM -le NUM ]]`      | Less than or equal    |
 | `[[ NUM -gt NUM ]]`      | Greater than          |
 | `[[ NUM -ge NUM ]]`      | Greater than or equal |
-| ---                      | ---                   |
 | `[[ STRING =~ STRING ]]` | Regexp                |
-| ---                      | ---                   |
 | `(( NUM < NUM ))`        | Numeric conditions    |
 
 #### More Conditions
@@ -357,7 +351,6 @@ Using `[[` is actually a command-line program that returns either `0` (true) or 
 | Condition            | Description              |
 | -------------------- | ------------------------ |
 | `[[ -o noclobber ]]` | If OPTIONNAME is enabled |
-| ---                  | ---                      |
 | `[[ ! EXPR ]]`       | Not                      |
 | `[[ X && Y ]]`       | And                      |
 | `[[ X || Y ]]`       | Or                       |
@@ -374,7 +367,6 @@ Using `[[` is actually a command-line program that returns either `0` (true) or 
 | `[[ -s FILE ]]`         | Size is > 0 bytes       |
 | `[[ -f FILE ]]`         | File                    |
 | `[[ -x FILE ]]`         | Executable              |
-| ---                     | ---                     |
 | `[[ FILE1 -nt FILE2 ]]` | 1 is more recent than 2 |
 | `[[ FILE1 -ot FILE2 ]]` | 2 is more recent than 1 |
 | `[[ FILE1 -ef FILE2 ]]` | Same files              |
