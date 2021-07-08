@@ -1,3 +1,3 @@
 # robertlarocca.github.io
 
-The source code for my personal blog and website built using Hugo.
+The public website and source code for laroccx.com generated with Hugo.

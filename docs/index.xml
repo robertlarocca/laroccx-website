@@ -2,50 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>LaRoccx</title>
-    <link>https://laroccx.com/</link>
+    <link>https://www.laroccx.com/</link>
     <description>Recent content on LaRoccx</description>
     <image>
-      <url>https://laroccx.com/robert_larocca.png</url>
-      <link>https://laroccx.com/robert_larocca.png</link>
+      <url>https://www.laroccx.com/robert_larocca.png</url>
+      <link>https://www.laroccx.com/robert_larocca.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jun 2021 03:15:00 -0400</lastBuildDate><atom:link href="https://laroccx.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jul 2021 03:45:00 -0400</lastBuildDate><atom:link href="https://www.laroccx.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash Scripting Syntax</title>
+      <link>https://www.laroccx.com/posts/bash-scripting/</link>
+      <pubDate>Thu, 08 Jul 2021 03:45:00 -0400</pubDate>
+      
+      <guid>https://www.laroccx.com/posts/bash-scripting/</guid>
+      <description>&lt;p&gt;This article servers more or less as a personal reminder and not a detailed user guide to getting started with Bash scripting. It does however include most of the syntax required to create Bash scripts.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How to Deploy an OpenVPN Server on OpenWrt 19.07</title>
-      <link>https://laroccx.com/posts/openvpn-openwrt/</link>
+      <link>https://www.laroccx.com/posts/openvpn-openwrt/</link>
       <pubDate>Sun, 20 Jun 2021 03:15:00 -0400</pubDate>
       
-      <guid>https://laroccx.com/posts/openvpn-openwrt/</guid>
+      <guid>https://www.laroccx.com/posts/openvpn-openwrt/</guid>
       <description>&lt;p&gt;📌 This should also work on the current &lt;code&gt;OpenWrt 21.02&lt;/code&gt; release candidate.&lt;/p&gt;
 &lt;p&gt;This guide outlines how to configure an OpenWrt gateway as a OpenVPN server, which is perfect for providing secure remote access to your local network from anywhere.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>https://laroccx.com/posts/markdown-syntax/</link>
+      <link>https://www.laroccx.com/posts/markdown-syntax/</link>
       <pubDate>Sun, 13 Jun 2021 14:47:22 -0400</pubDate>
       
-      <guid>https://laroccx.com/posts/markdown-syntax/</guid>
+      <guid>https://www.laroccx.com/posts/markdown-syntax/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://laroccx.com/about/</link>
+      <link>https://www.laroccx.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://laroccx.com/about/</guid>
+      <guid>https://www.laroccx.com/about/</guid>
       <description>&lt;p&gt;This website is perpetually under development, especially now that I&amp;rsquo;m learning and migrating to &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;. Everything worthwhile is getting converted to Markdown!&lt;/p&gt;</description>
     </item>
     
     
     <item>
       <title>Resume</title>
-      <link>https://laroccx.com/resume/</link>
+      <link>https://www.laroccx.com/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://laroccx.com/resume/</guid>
+      <guid>https://www.laroccx.com/resume/</guid>
       <description>&lt;h1 id=&#34;robert-larocca&#34;&gt;Robert LaRocca&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A well-rounded and reliable Linux Systems Administrator, able to streamline operations, develop tools for process automation, harden information security and increase systems availability using: modern technology, leading open-source software, professional experience and proven track-record.&lt;/p&gt;

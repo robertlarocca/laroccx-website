@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://laroccx.com/sitemap.xml
+Sitemap: https://www.laroccx.com/sitemap.xml
