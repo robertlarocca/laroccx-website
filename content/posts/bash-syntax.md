@@ -15,6 +15,7 @@ draft: false
 This post is more or less a Bash syntax reference guide and isn't intended to be detailed user guide for learning how to Bash script. It does however, include most of the syntax you'll need to create shell scripts.
 
 Much of this content is borrowed from other authors and `open-source` content creators. I've simply combined their works into a easy to follow format. I'll do my best to credit the original author and provide sources whenever possible.
+
 <!--more-->
 
 ## Example Script
@@ -363,7 +364,7 @@ Using `[[` is actually a command-line program that returns either `0` (true) or 
 | `[[ -o noclobber ]]` | If OPTIONNAME is enabled |
 | `[[ ! EXPR ]]`       | Not                      |
 | `[[ X && Y ]]`       | And                      |
-| `[[ X || Y ]]`       | Or                       |
+| `[[ X \|\| Y ]]`     | Or                       |
 
 ### File Conditions
 
