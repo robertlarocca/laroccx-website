@@ -17,7 +17,8 @@
       <pubDate>Thu, 08 Jul 2021 03:45:00 -0400</pubDate>
       
       <guid>https://www.laroccx.com/posts/bash-syntax/</guid>
-      <description>&lt;p&gt;This post is more or less for my personal reference when I can&amp;rsquo;t remember something and not a detailed user guide for getting started with Bash scripting. It does however, include most of the syntax you&amp;rsquo;ll to create Bash scripts.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This post is more or less a Bash syntax reference guide and isn&amp;rsquo;t intended to be detailed user guide for learning how to Bash script. It does however, include most of the syntax you&amp;rsquo;ll need to create shell scripts.&lt;/p&gt;
+&lt;p&gt;Much of this content is borrowed from other authors and &lt;code&gt;open-source&lt;/code&gt; content creators. I&amp;rsquo;ve simply combined their works into a easy to follow format. I&amp;rsquo;ll do my best to credit the original author and provide sources whenever possible.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -12,10 +12,12 @@ tags:
 draft: false
 ---
 
-This post is more or less for my personal reference when I can't remember something and not a detailed user guide for getting started with Bash scripting. It does however, include most of the syntax you'll to create Bash scripts.
+This post is more or less a Bash syntax reference guide and isn't intended to be detailed user guide for learning how to Bash script. It does however, include most of the syntax you'll need to create shell scripts.
+
+Much of this content is borrowed from other authors and `open-source` content creators. I've simply combined their works into a easy to follow format. I'll do my best to credit the original author and provide sources whenever possible.
 <!--more-->
 
-### Example
+## Example Script
 
 ```bash
 #!/usr/bin/env bash
@@ -24,24 +26,24 @@ NAME="Robert"
 echo "Hello $NAME!"
 ```
 
-### Variables
+## Variables
 
 ```bash
 NAME="Robert"
-echo $NAME		 # Robert
-echo "$NAME"	 # Robert
-echo "${NAME}!"	 # Robert!
+echo $NAME        # Robert
+echo "$NAME"      # Robert
+echo "${NAME}!"   # Robert!
 ```
 
-### String Quotes
+## String Quotes
 
 ```bash
 NAME="Robert"
-echo "Hello $NAME"	 # Hello Robert
-echo 'Hello $NAME'	 # Hello $NAME
+echo "Hello $NAME"    # Hello Robert
+echo 'Hello $NAME'    # Hello $NAME
 ```
 
-### Command Substitution
+## Command Substitution
 
 ```bash
 echo "The current directory is $(pwd)"
@@ -49,35 +51,35 @@ echo "The current directory is $(pwd)"
 
 See [command substitution](http://wiki.bash-hackers.org/syntax/expansion/cmdsubst) for more information.
 
-### Conditional Execution
+## Conditional Execution
 
 ```bash
 git commit && git push
 git commit || echo "Commit Failed!"
 ```
 
-### Functions
+## Functions
 
 ```bash
 display_name() {
-	NAME="Robert"
-	echo "$NAME"
+  NAME="Robert"
+  echo "$NAME"
 }
 
 echo "Hello, My name is $(display_name)"
 ```
 
-### Conditionals
+## Conditionals
 
 ```bash
 if [ -z "$variable" ]; then
-	echo "Variable is empty"
+  echo "Variable is empty"
 elif [ -n "$variable" ]; then
-	echo "Variable is not empty"
+  echo "Variable is not empty"
 fi
 ```
 
-### Strict Mode
+## Strict Mode
 
 ```bash
 set -euo pipefail
@@ -86,7 +88,7 @@ IFS=$'\n\t'
 
 See [unofficial bash strict mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/) for more information.
 
-### Brace Expansion
+## Brace Expansion
 
 ```bash
 echo {A,B}.sh
@@ -106,50 +108,50 @@ See [brace expansion](http://wiki.bash-hackers.org/syntax/expansion/brace) for m
 
 ```bash
 name="Robert"
-echo ${name}
-echo ${name/J/j}	 # "Robert" (substitution)
-echo ${name:0:2}	 # "Ro" (slicing)
-echo ${name::2}		 # "Ro" (slicing)
-echo ${name::-1}	 # "Rob" (slicing)
-echo ${name:(-1)}	 # "t" (slicing from right)
-echo ${name:(-2):1}	 # "r" (slicing from right)
+echo ${name}          # "Robert"
+echo ${name/R/r}      # "robert" (substitution)
+echo ${name:0:2}      # "Ro" (slicing)
+echo ${name::2}       # "Ro" (slicing)
+echo ${name::-1}      # "Rob" (slicing)
+echo ${name:(-1)}     # "t" (slicing from right)
+echo ${name:(-2):1}   # "r" (slicing from right)
 ```
 
 ```bash
 length=2
-echo ${name:0:length}	 # "Ro"
+echo ${name:0:length}   # "Ro"
 ```
 
 See [parameter expansion](http://wiki.bash-hackers.org/syntax/pe) for more information.
 
 ```bash
 STR="/path/to/foo.cpp"
-echo ${STR%.cpp}	 # /path/to/foo
-echo ${STR%.cpp}.o	 # /path/to/foo.o
-echo ${STR%/*}		 # /path/to
+echo ${STR%.cpp}      # /path/to/foo
+echo ${STR%.cpp}.o    # /path/to/foo.o
+echo ${STR%/*}        # /path/to
 
-echo ${STR##*.}		 # cpp (extension)
-echo ${STR##*/}		 # foo.cpp (basepath)
+echo ${STR##*.}       # cpp (extension)
+echo ${STR##*/}       # foo.cpp (basepath)
 
-echo ${STR#*/}		 # path/to/foo.cpp
-echo ${STR##*/}		 # foo.cpp
+echo ${STR#*/}        # path/to/foo.cpp
+echo ${STR##*/}       # foo.cpp
 
-echo ${STR/foo/bar}	 # /path/to/bar.cpp
+echo ${STR/foo/bar}   # /path/to/bar.cpp
 ```
 
 ```bash
 STR="Hello World!"
-echo ${STR:6:5}		 # "World"
-echo ${STR: -5:5}	 # "orld!"
+echo ${STR:6:5}     # "World"
+echo ${STR: -5:5}   # "orld!"
 ```
 
 ```bash
 SRC="/path/to/foo.cpp"
-BASE=${SRC##*/}		 # "foo.cpp" (basepath)
-DIR=${SRC%$BASE}	 # "/path/to/" (dirpath)
+BASE=${SRC##*/}     # "foo.cpp" (basepath)
+DIR=${SRC%$BASE}    # "/path/to/" (dirpath)
 ```
 
-### Substitution
+## Substitution
 
 | Code              | Description         |
 | ----------------- | ------------------- |
@@ -162,46 +164,52 @@ DIR=${SRC%$BASE}	 # "/path/to/" (dirpath)
 | `${FOO/%from/to}` | Replace suffix      |
 | `${FOO/#from/to}` | Replace prefix      |
 
-### Comments
+## Comments
 
 ```bash
 # This is a single line comment!
 ```
 
 ```bash
+# This is a
+# multi-line
+# comment
+```
+
+```bash
 : '
 This is a
-multi line
+multi-line
 comment
 '
 ```
 
-### Substrings
+## Substrings
 
 | Expression      | Description                    |
 | --------------- | ------------------------------ |
 | `${FOO:0:3}`    | Substring _(position, length)_ |
 | `${FOO:(-3):3}` | Substring from the right       |
 
-### Length
+## Length
 
 | Expression | Description      |
 | ---------- | ---------------- |
 | `${#FOO}`  | Length of `$FOO` |
 
-### Manipulation
+## Manipulation
 
 ```bash
 STR="HELLO WORLD!"
-echo ${STR,}	 # hELLO WORLD! (first letter lowercase)
-echo ${STR,,}	 # hello world! (all lowercase)
+echo ${STR,}    # hELLO WORLD! (first letter lowercase)
+echo ${STR,,}   # hello world! (all lowercase)
 
 STR="hello world!"
-echo ${STR^}	 # Hello world! (first letter uppercase)
-echo ${STR^^}	 # HELLO WORLD! (all uppercase)
+echo ${STR^}    # Hello world! (first letter uppercase)
+echo ${STR^^}   # HELLO WORLD! (all uppercase)
 ```
 
-### Default Values
+## Default Values
 
 | Expression        | Description                                              |
 | ----------------- | -------------------------------------------------------- |
@@ -218,7 +226,7 @@ Omitting the `:` removes the (non)nullity checks. `${FOO-val}` expands to `val` 
 
 ```bash
 for i in /etc/rc.*; do
-	echo $i
+  echo $i
 done
 ```
 
@@ -234,7 +242,7 @@ done
 
 ```bash
 for i in {1..5}; do
-    echo "Welcome $i"
+  echo "Welcome $i"
 done
 ```
 
@@ -242,7 +250,7 @@ done
 
 ```bash
 for i in {5..50..5}; do
-    echo "Welcome $i"
+  echo "Welcome $i"
 done
 ```
 
@@ -255,6 +263,8 @@ done
 ```
 
 ### Forever
+
+Be careful when using infinite loops! If, not used properly may crash a running system.
 
 ```bash
 while true; do
@@ -288,8 +298,8 @@ myfunc "Robert"
 
 ```bash
 myfunc() {
-    local myresult='some value'
-    echo $myresult
+  local myresult='some value'
+  echo $myresult
 }
 ```
 
@@ -329,7 +339,7 @@ See [special parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_p
 
 ### Conditions
 
-Using `[[` is actually a command-line program that returns either `0` (true) or `1` (false). Any program that obeys the same logic (all base utils, such as `grep(1)` or `ping(1)`) can be used as conditionals.
+Using `[[` is actually a command-line program that returns either `0` (true) or `1` (false). Any program that obeys the same logic can be used as conditionals. All base utilities, such as `grep` or `ping` support conditionals.
 
 | Condition                | Description           |
 | ------------------------ | --------------------- |
@@ -361,17 +371,17 @@ Using `[[` is actually a command-line program that returns either `0` (true) or 
 | ----------------------- | ----------------------- |
 | `[[ -e FILE ]]`         | Exists                  |
 | `[[ -r FILE ]]`         | Readable                |
-| `[[ -h FILE ]]`         | Symlink                 |
+| `[[ -h FILE ]]`         | Symbolic Link           |
 | `[[ -d FILE ]]`         | Directory               |
 | `[[ -w FILE ]]`         | Writable                |
-| `[[ -s FILE ]]`         | Size is > 0 bytes       |
+| `[[ -s FILE ]]`         | Size `>` 0 bytes        |
 | `[[ -f FILE ]]`         | File                    |
 | `[[ -x FILE ]]`         | Executable              |
 | `[[ FILE1 -nt FILE2 ]]` | 1 is more recent than 2 |
 | `[[ FILE1 -ot FILE2 ]]` | 2 is more recent than 1 |
 | `[[ FILE1 -ef FILE2 ]]` | Same files              |
 
-### Example
+### Examples
 
 ```bash
 # String
@@ -403,7 +413,7 @@ if [[ "A" =~ . ]]
 
 ```bash
 if (( $a < $b )); then
-   echo "$a is smaller than $b"
+  echo "$a is smaller than $b"
 fi
 ```
 
@@ -430,14 +440,14 @@ Fruits[2]="Orange"
 ### Working with Arrays
 
 ```bash
-echo ${Fruits[0]}           # Element #0
-echo ${Fruits[-1]}          # Last element
-echo ${Fruits[@]}           # All elements, space-separated
-echo ${#Fruits[@]}          # Number of elements
-echo ${#Fruits}             # String length of the 1st element
-echo ${#Fruits[3]}          # String length of the Nth element
-echo ${Fruits[@]:3:2}       # Range (from position 3, length 2)
-echo ${!Fruits[@]}          # Keys of all elements, space-separated
+echo ${Fruits[0]}       # Element #0
+echo ${Fruits[-1]}      # Last element
+echo ${Fruits[@]}       # All elements, space-separated
+echo ${#Fruits[@]}      # Number of elements
+echo ${#Fruits}         # String length of the 1st element
+echo ${#Fruits[3]}      # String length of the Nth element
+echo ${Fruits[@]:3:2}   # Range (from position 3, length 2)
+echo ${!Fruits[@]}      # Keys of all elements, space-separated
 ```
 
 ### Operations
@@ -489,7 +499,7 @@ unset sounds[dog]     # Delete dog
 
 ### Iteration
 
-#### Iterate Over Values
+#### Iterate over Values
 
 ```bash
 for val in "${sounds[@]}"; do
@@ -497,7 +507,7 @@ for val in "${sounds[@]}"; do
 done
 ```
 
-#### Iterate Over Keys
+#### Iterate over Keys
 
 ```bash
 for key in "${!sounds[@]}"; do
@@ -507,7 +517,7 @@ done
 
 ## Options
 
-### Options
+### Basic Options
 
 ```bash
 set -o noclobber    # Avoid overlay files (echo "hi" > foo)
@@ -586,8 +596,8 @@ $(($RANDOM%200))    # Random number 0..199
 ### Sub-Shells
 
 ```bash
-(cd somedir; echo "I'm now in $PWD")
-pwd # still in first directory
+(cd /var/tmp; echo "I'm now in $PWD")
+pwd   # still in the original directory
 ```
 
 ### Redirection
@@ -608,8 +618,7 @@ python hello.py < foo.txt   # feed foo.txt to stdin for python
 ### Inspecting Commands
 
 ```bash
-command -V cd
-#=> "cd is a function/alias/whatever"
+command -V cd   # "cd is a function/alias/whatever"
 ```
 
 ### Trap Errors
@@ -648,14 +657,14 @@ esac
 source "${0%/*}/../share/foo.sh"
 ```
 
-### printf
+### Format and Print Data
+
+Use the `printf` command to format and print data.
 
 ```bash
-printf "Hello %s, I'm %s" Sven Olga		# "Hello Sven, I'm Olga
-
-printf "1 + 1 = %d" 2		# "1 + 1 = 2"
-
-printf "This is how you print a float: %f" 2		# "This is how you print a float: 2.000000"
+printf "Hello %s, I'm %s" Sven Olga     # "Hello Sven, I'm Olga
+printf "1 + 1 = %d" 2                   # "1 + 1 = 2"
+printf "How you print a float: %f" 2    # "This is how you print a float: 2.000000"
 ```
 
 ### Directory of Script
@@ -679,7 +688,9 @@ while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do case $1 in
     flag=1
     ;;
 esac; shift; done
-if [[ "$1" == '--' ]]; then shift; fi
+if [[ "$1" == '--' ]]; then
+  shift
+fi
 ```
 
 ### Heredoc
@@ -692,8 +703,8 @@ EOF_XYZ
 
 ```sh
 cat <<-EOF_XYZ
-	hello world
-	EOF_XYZ
+  hello world
+  EOF_XYZ
 ```
 
 ### Reading User Input
@@ -705,7 +716,7 @@ echo $ans
 ```
 
 ```bash
-read -n 1 ans    # Just one character
+read -n 1 ans   # Just one character
 ```
 
 ### Special Variables
@@ -722,18 +733,20 @@ See [special parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_p
 ### Goto Previous Directory
 
 ```bash
-pwd # /home/user/foo
+pwd   # /home/user/foo
 cd bar/
-pwd # /home/user/foo/bar
+pwd   # /home/user/foo/bar
 cd -
-pwd # /home/user/foo
+pwd   # /home/user/foo
 ```
 
 ### Check for Command Result
 
 ```bash
-if ping -c 1 google.com; then
-  echo "It appears you have a working internet connection"
+if ping -c 1 www.laroccx.com; then
+  echo "You're connected to the internet!"
+else
+  echo "You're not connected to the internet!"
 fi
 ```
 
