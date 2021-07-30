@@ -4,10 +4,10 @@ title: "How to Deploy Nextcloud on Ubuntu 20.04 LTS"
 date: 2021-06-27T04:45:00-04:00
 categories:
   - server
-  - collaboration
   - self-hosted
 tags:
   - server
+  - collaboration
   - nextcloud
   - apache
   - mysql

@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LaRoccx</title>
     <link>https://www.laroccx.com/</link>
     <description>Recent content on LaRoccx</description>
-    <image>
-      <url>https://www.laroccx.com/robert_larocca.png</url>
-      <link>https://www.laroccx.com/robert_larocca.png</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Jul 2021 03:45:00 -0400</lastBuildDate><atom:link href="https://www.laroccx.com/index.xml" rel="self" type="application/rss+xml" />
@@ -49,6 +45,14 @@
       <description>&lt;p&gt;This website is perpetually under development, especially now that I&amp;rsquo;m learning and migrating to &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;. Everything worthwhile is getting converted to Markdown!&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Archive</title>
+      <link>https://www.laroccx.com/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.laroccx.com/archives/</guid>
+      <description>archive</description>
+    </item>
     
     <item>
       <title>Resume</title>
@@ -62,6 +66,14 @@
 &lt;/blockquote&gt;</description>
     </item>
     
+    <item>
+      <title>Search</title>
+      <link>https://www.laroccx.com/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.laroccx.com/search/</guid>
+      <description>Search</description>
+    </item>
     
   </channel>
 </rss>
