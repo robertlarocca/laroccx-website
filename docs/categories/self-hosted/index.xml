@@ -4,6 +4,10 @@
     <title>self-hosted on LaRoccx</title>
     <link>https://www.laroccx.com/categories/self-hosted/</link>
     <description>Recent content in self-hosted on LaRoccx</description>
+    <image>
+      <url>https://www.laroccx.com/robert_larocca.png</url>
+      <link>https://www.laroccx.com/robert_larocca.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Jun 2021 03:15:00 -0400</lastBuildDate><atom:link href="https://www.laroccx.com/categories/self-hosted/index.xml" rel="self" type="application/rss+xml" />

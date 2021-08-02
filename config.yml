@@ -66,9 +66,9 @@ params:
       - name: Resume
         url: resume/
 
-  homeInfoParams:
-    Title: "Robert LaRocca"
-    Content: "Welcome to LaRoccx"
+  # homeInfoParams:
+  #   Title: "Robert LaRocca"
+  #   Content: "Welcome to LaRoccx"
 
   socialIcons:
     - name: email
