@@ -1,3 +1,9 @@
+---
+draft: false
+outputs:
+ - txt
+---
+
 {
     "m.homeserver": {
         "base_url": "https://laroccx-llc.ems.host"
