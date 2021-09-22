@@ -1,0 +1,145 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>How to Create a macOS Big Sur ISO Disk Image | LaRoccx</title>
+<meta name=keywords content="macos,big sur,vmware">
+<meta name=description content="This post is more or less a reminder for myself how to create a macOS disk image. The created ISO image can be used with VM ware Fusion, VM ware Workstations, or used to make a bootable USB installer.
+Download macOS Big Sur  macOS Big Sur elevates the most advanced desktop operating system in the world to a new level of power and beauty. Experience Mac to the fullest with a refined new design.">
+<meta name=author content="Robert LaRocca">
+<link rel=canonical href=https://www.laroccx.com/posts/macos-bigsur-iso/>
+<link href=/assets/css/stylesheet.min.746a86b58bb2b052b5e4df8216510494f04f81e62c08d626150c26c69ca929da.css integrity="sha256-dGqGtYuysFK15N+CFlEElPBPgeYsCNYmFQwmxpypKdo=" rel="preload stylesheet" as=style>
+<link rel=icon href=https://www.laroccx.com/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://www.laroccx.com/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://www.laroccx.com/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://www.laroccx.com/robert_larocca.png>
+<link rel=mask-icon href=https://www.laroccx.com/robert_larocca.png>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.88.1">
+<meta property="og:title" content="How to Create a macOS Big Sur ISO Disk Image">
+<meta property="og:description" content="This post is more or less a reminder for myself how to create a macOS disk image. The created ISO image can be used with VM ware Fusion, VM ware Workstations, or used to make a bootable USB installer.
+Download macOS Big Sur  macOS Big Sur elevates the most advanced desktop operating system in the world to a new level of power and beauty. Experience Mac to the fullest with a refined new design.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.laroccx.com/posts/macos-bigsur-iso/"><meta property="og:image" content="https://www.laroccx.com/robert_larocca.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-09-21T01:00:29-04:00">
+<meta property="article:modified_time" content="2021-09-21T01:00:29-04:00"><meta property="og:site_name" content="LaRoccx">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://www.laroccx.com/robert_larocca.png">
+<meta name=twitter:title content="How to Create a macOS Big Sur ISO Disk Image">
+<meta name=twitter:description content="This post is more or less a reminder for myself how to create a macOS disk image. The created ISO image can be used with VM ware Fusion, VM ware Workstations, or used to make a bootable USB installer.
+Download macOS Big Sur  macOS Big Sur elevates the most advanced desktop operating system in the world to a new level of power and beauty. Experience Mac to the fullest with a refined new design.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://www.laroccx.com/posts/"},{"@type":"ListItem","position":2,"name":"How to Create a macOS Big Sur ISO Disk Image","item":"https://www.laroccx.com/posts/macos-bigsur-iso/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Create a macOS Big Sur ISO Disk Image","name":"How to Create a macOS Big Sur ISO Disk Image","description":"This post is more or less a reminder for myself how to create a macOS disk image. The created ISO image can be used with VM ware Fusion, VM ware Workstations, or used to make a bootable USB installer.\nDownload macOS Big Sur  macOS Big Sur elevates the most advanced desktop operating system in the world to a new level of power and beauty. Experience Mac to the fullest with a refined new design.","keywords":["macos","big sur","vmware"],"articleBody":"This post is more or less a reminder for myself how to create a macOS disk image. The created ISO image can be used with VM ware Fusion, VM ware Workstations, or used to make a bootable USB installer.\nDownload macOS Big Sur  macOS Big Sur elevates the most advanced desktop operating system in the world to a new level of power and beauty. Experience Mac to the fullest with a refined new design. Enjoy the biggest Safari update ever. Discover new features for Maps and Messages. And get even more transparency around your privacy.\n First download macOS Big Sur from the Mac App Store. This is the only legal method to obtain a copy of the software. It’s a free download if you own a Mac, otherwise just barrow a friend or family-members Mac for a couple hours.\nCreate an Empty Disk Image sudo hdiutil create \\  -o /tmp/macOS-Big-Sur \\  -size 16384 m \\  -volname macOS-Big-Sur \\  -layout SPUD \\  -fs HFS+J Mount the Empty Disk Image sudo hdiutil attach /tmp/macOS-Big-Sur.dmg \\  -moutpoint /Volumes/macOS-Big-Sur \\  -noverify Copy Install Media to Mounted Disk Image sudo /Applications/Install\\ macOS\\ Big\\ Sur.app/Contents/Resources/createinstallmedia \\  --volume /Volumes/macOS-Big-Sur \\  --nointeraction Covert DMG to ISO and Rename Disk Image hdiutil eject -force /Volumes/Install\\ macOS\\ Big\\ Sur hdiutil convert /tmp/macOS-Big-Sur.dmg \\  -o ~/Downloads/macOS-Big-Sur -format Unto mv -v ~/Downloads/macOS-Big-Sur.cdr ~/Downloads/macOS-Big-Sur.iso Cleanup Temporary Files sudo rm -fv /tmp/macOS-Big-Sur.dmg ","wordCount":"228","inLanguage":"en","datePublished":"2021-09-21T01:00:29-04:00","dateModified":"2021-09-21T01:00:29-04:00","author":[{"@type":"Person","name":"Robert LaRocca"}],"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.laroccx.com/posts/macos-bigsur-iso/"},"publisher":{"@type":"Organization","name":"LaRoccx","logo":{"@type":"ImageObject","url":"https://www.laroccx.com/favicon.ico"}}}</script>
+</head>
+<body class=dark id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
+<noscript>
+<style type=text/css>#theme-toggle,.top-link{display:none}</style>
+</noscript>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://www.laroccx.com/ accesskey=h title="Home (Alt + H)">Home</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu onscroll=menu_on_scroll()>
+<li>
+<a href=https://www.laroccx.com/posts/ title=Posts>
+<span>Posts</span>
+</a>
+</li>
+<li>
+<a href=https://www.laroccx.com/categories/ title=Categories>
+<span>Categories</span>
+</a>
+</li>
+<li>
+<a href=https://www.laroccx.com/tags/ title=Tags>
+<span>Tags</span>
+</a>
+</li>
+<li>
+<a href=https://www.laroccx.com/archives/ title=Archive>
+<span>Archive</span>
+</a>
+</li>
+<li>
+<a href=https://www.laroccx.com/search/ title="Search (Alt + /)" accesskey=/>
+<span>Search</span>
+</a>
+</li></ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs>
+<a href=https://www.laroccx.com/>Home</a>&nbsp;»&nbsp;<a href=https://www.laroccx.com/posts/>Posts</a>
+</div>
+<h1 class=post-title>
+How to Create a macOS Big Sur ISO Disk Image
+</h1>
+<div class=post-meta>
+September 21, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Robert LaRocca
+</div>
+</header>
+<div class=post-content>
+<p>This post is more or less a reminder for myself how to create a macOS disk image. The created ISO image can be used with VM ware Fusion, VM ware Workstations, or used to make a bootable USB installer.</p>
+<h2 id=download-macos-big-sur>Download macOS Big Sur<a hidden class=anchor aria-hidden=true href=#download-macos-big-sur>#</a></h2>
+<blockquote>
+<p>macOS Big Sur elevates the most advanced desktop operating system in the world to a new level of power and beauty. Experience Mac to the fullest with a refined new design. Enjoy the biggest Safari update ever. Discover new features for Maps and Messages. And get even more transparency around your privacy.</p>
+</blockquote>
+<p>First download <a href=https://apps.apple.com/us/app/macos-big-sur/id1526878132>macOS Big Sur</a> from the Mac App Store. This is the only <em>legal</em> method to obtain a copy of the software. It&rsquo;s a free download if you own a Mac, otherwise just barrow a friend or family-members Mac for a couple hours.</p>
+<h2 id=create-an-empty-disk-image>Create an Empty Disk Image<a hidden class=anchor aria-hidden=true href=#create-an-empty-disk-image>#</a></h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>sudo hdiutil create <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  -o /tmp/macOS-Big-Sur <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  -size <span style=color:#ae81ff>16384</span> m <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  -volname macOS-Big-Sur <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  -layout SPUD <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  -fs HFS+J
+</code></pre></div><h2 id=mount-the-empty-disk-image>Mount the Empty Disk Image<a hidden class=anchor aria-hidden=true href=#mount-the-empty-disk-image>#</a></h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>sudo hdiutil attach /tmp/macOS-Big-Sur.dmg <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  -moutpoint /Volumes/macOS-Big-Sur <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  -noverify
+</code></pre></div><h2 id=copy-install-media-to-mounted-disk-image>Copy Install Media to Mounted Disk Image<a hidden class=anchor aria-hidden=true href=#copy-install-media-to-mounted-disk-image>#</a></h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>sudo /Applications/Install<span style=color:#ae81ff>\ </span>macOS<span style=color:#ae81ff>\ </span>Big<span style=color:#ae81ff>\ </span>Sur.app/Contents/Resources/createinstallmedia <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  --volume /Volumes/macOS-Big-Sur <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  --nointeraction
+</code></pre></div><h2 id=covert-dmg-to-iso-and-rename-disk-image>Covert DMG to ISO and Rename Disk Image<a hidden class=anchor aria-hidden=true href=#covert-dmg-to-iso-and-rename-disk-image>#</a></h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>hdiutil eject -force /Volumes/Install<span style=color:#ae81ff>\ </span>macOS<span style=color:#ae81ff>\ </span>Big<span style=color:#ae81ff>\ </span>Sur
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>hdiutil convert /tmp/macOS-Big-Sur.dmg <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>  -o ~/Downloads/macOS-Big-Sur
+  -format Unto
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>mv -v ~/Downloads/macOS-Big-Sur.cdr ~/Downloads/macOS-Big-Sur.iso
+</code></pre></div><h2 id=cleanup-temporary-files>Cleanup Temporary Files<a hidden class=anchor aria-hidden=true href=#cleanup-temporary-files>#</a></h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>sudo rm -fv /tmp/macOS-Big-Sur.dmg
+</code></pre></div>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+<li><a href=https://www.laroccx.com/tags/macos/>macos</a></li>
+<li><a href=https://www.laroccx.com/tags/big-sur/>big sur</a></li>
+<li><a href=https://www.laroccx.com/tags/vmware/>vmware</a></li>
+</ul>
+<nav class=paginav>
+<a class=next href=https://www.laroccx.com/posts/bash-syntax/>
+<span class=title>Next Page »</span>
+<br>
+<span>Bash Syntax Guide</span>
+</a>
+</nav>
+</footer>
+</article>
+</main><footer class=footer>
+<span>Copyright &copy;
+<script>document.write((new Date).getFullYear())</script>
+Robert LaRocca.
+</span>
+</footer>
+</body>
+</html>

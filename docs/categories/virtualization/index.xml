@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>virtualization on LaRoccx</title>
+    <link>https://www.laroccx.com/categories/virtualization/</link>
+    <description>Recent content in virtualization on LaRoccx</description>
+    <image>
+      <url>https://www.laroccx.com/robert_larocca.png</url>
+      <link>https://www.laroccx.com/robert_larocca.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Sep 2021 01:00:29 -0400</lastBuildDate><atom:link href="https://www.laroccx.com/categories/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Create a macOS Big Sur ISO Disk Image</title>
+      <link>https://www.laroccx.com/posts/macos-bigsur-iso/</link>
+      <pubDate>Tue, 21 Sep 2021 01:00:29 -0400</pubDate>
+      
+      <guid>https://www.laroccx.com/posts/macos-bigsur-iso/</guid>
+      <description>This post is more or less a reminder for myself how to create a macOS disk image. The created ISO image can be used with VM ware Fusion, VM ware Workstations, or used to make a bootable USB installer.
+Download macOS Big Sur  macOS Big Sur elevates the most advanced desktop operating system in the world to a new level of power and beauty. Experience Mac to the fullest with a refined new design.</description>
+    </item>
+    
+  </channel>
+</rss>

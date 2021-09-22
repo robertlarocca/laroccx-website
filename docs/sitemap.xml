@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.laroccx.com/tags/big-sur/</loc>
+    <lastmod>2021-09-21T01:00:29-04:00</lastmod>
+  </url><url>
+    <loc>https://www.laroccx.com/categories/</loc>
+    <lastmod>2021-09-21T01:00:29-04:00</lastmod>
+  </url><url>
+    <loc>https://www.laroccx.com/posts/macos-bigsur-iso/</loc>
+    <lastmod>2021-09-21T01:00:29-04:00</lastmod>
+  </url><url>
+    <loc>https://www.laroccx.com/</loc>
+    <lastmod>2021-09-21T01:00:29-04:00</lastmod>
+  </url><url>
+    <loc>https://www.laroccx.com/tags/macos/</loc>
+    <lastmod>2021-09-21T01:00:29-04:00</lastmod>
+  </url><url>
+    <loc>https://www.laroccx.com/posts/</loc>
+    <lastmod>2021-09-21T01:00:29-04:00</lastmod>
+  </url><url>
+    <loc>https://www.laroccx.com/tags/</loc>
+    <lastmod>2021-09-21T01:00:29-04:00</lastmod>
+  </url><url>
+    <loc>https://www.laroccx.com/categories/virtualization/</loc>
+    <lastmod>2021-09-21T01:00:29-04:00</lastmod>
+  </url><url>
+    <loc>https://www.laroccx.com/tags/vmware/</loc>
+    <lastmod>2021-09-21T01:00:29-04:00</lastmod>
+  </url><url>
     <loc>https://www.laroccx.com/tags/bash/</loc>
     <lastmod>2021-07-08T03:45:00-04:00</lastmod>
   </url><url>
     <loc>https://www.laroccx.com/posts/bash-syntax/</loc>
-    <lastmod>2021-07-08T03:45:00-04:00</lastmod>
-  </url><url>
-    <loc>https://www.laroccx.com/categories/</loc>
     <lastmod>2021-07-08T03:45:00-04:00</lastmod>
   </url><url>
     <loc>https://www.laroccx.com/tags/development/</loc>
@@ -17,19 +41,10 @@
     <loc>https://www.laroccx.com/categories/development/</loc>
     <lastmod>2021-07-08T03:45:00-04:00</lastmod>
   </url><url>
-    <loc>https://www.laroccx.com/</loc>
-    <lastmod>2021-07-08T03:45:00-04:00</lastmod>
-  </url><url>
-    <loc>https://www.laroccx.com/posts/</loc>
-    <lastmod>2021-07-08T03:45:00-04:00</lastmod>
-  </url><url>
     <loc>https://www.laroccx.com/tags/scripting/</loc>
     <lastmod>2021-07-08T03:45:00-04:00</lastmod>
   </url><url>
     <loc>https://www.laroccx.com/tags/shell/</loc>
-    <lastmod>2021-07-08T03:45:00-04:00</lastmod>
-  </url><url>
-    <loc>https://www.laroccx.com/tags/</loc>
     <lastmod>2021-07-08T03:45:00-04:00</lastmod>
   </url><url>
     <loc>https://www.laroccx.com/posts/openvpn-openwrt/</loc>

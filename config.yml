@@ -55,7 +55,7 @@ params:
   profileMode:
     enabled: true # must set explicitly to true or false
     title: "Robert LaRocca"
-    subtitle: "Welcome to LaRoccx"
+    subtitle: "Linux SysAdmin by day an open-source enthusiast by night"
     imageUrl: "robert_larocca.png"
     imageWidth: 192
     imageHeight: 192

@@ -6,6 +6,7 @@ draft: false
 # Robert LaRocca
 
 > A well-rounded and reliable Linux Systems Administrator, able to streamline operations, develop tools for process automation, harden information security and increase systems availability using: modern technology, leading open-source software, professional experience and proven track-record.
+
 <!--more-->
 
 ### Skills
@@ -16,7 +17,13 @@ draft: false
 
 ### Linux System Administrator
 
-**National Oak Distributors, West Palm Beach, FL — `2018-Present`**
+**GAN, Miami, FL — `2021-Present`**
+
+- Check back soon to follow my exciting journey into the online gaming industry.
+
+### Linux System Administrator
+
+**National Oak Distributors, West Palm Beach, FL — `2018-2021`**
 
 - Engineered a Snort based intrusion detection system (IDS) with a live HUD style dashboard.
 - Automated Linux server and containerized application deployments using BASH, Python and Ansible.
@@ -28,14 +35,14 @@ draft: false
 
 ### Computer Science Tutor
 
-**Palm Beach State College, Boca Raton FL — `2017-2018`**
+**Palm Beach State College, Boca Raton, FL — `2017-2018`**
 
 - Conducted individual and group tutoring sessions with student studying Linux, networking and IT security.
 - Assisted with the configuration of Palm Beach State College cybersecurity laboratory.
 
 ### Systems Administrator
 
-**Shore Electronics, Boca Raton FL — `2010-2017`**
+**Shore Electronics, Boca Raton, FL — `2010-2017`**
 
 - Designed and optimized a virtual private network using strongSwan (IPSec/IKEv2) and OpenVPN.
 - Automated Linux and Unix-like operating systems with crond, BASH and Landscape.
@@ -44,7 +51,7 @@ draft: false
 
 ### Quality Assurance
 
-**Shore Electronics, Boca Raton FL — `2005-2010`**
+**Shore Electronics, Boca Raton, FL — `2005-2010`**
 
 - Assisted with the implementation of an ISO:9001 accredited quality management system (QMS).
 - Developed and maintained the quality manual and training documentation.
@@ -54,6 +61,12 @@ draft: false
 
 ## Education
 
-**Palm Beach State College, Lake Worth FL — `Present`**
+**Palm Beach State College, Lake Worth, FL — `Present`**
 
 - Computer Science (BAS), Security and Network Assurance Concentration
+
+## Volunteer
+
+**ShellHacks, Miami, FL — `2021`**
+
+- Mentor students participating in Florida's largest hackathon.
