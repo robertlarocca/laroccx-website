@@ -61,7 +61,7 @@ hdiutil convert /tmp/macOS-Big-Sur.dmg \
 mv -v ~/Downloads/macOS-Big-Sur.cdr ~/Downloads/macOS-Big-Sur.iso
 ```
 
-## Cleanup Temporary Files
+## Remove Temporary Files
 
 ```shell
 sudo rm -fv /tmp/macOS-Big-Sur.dmg
