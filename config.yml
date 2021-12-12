@@ -74,7 +74,7 @@ params:
     - name: email
       url: "mailto:robert@laroccx.com?subject=Hello World!"
     - name: matrix
-      url: "https://matrix.to/#/@robert:laroccx.com"
+      url: "https://matrix.to/#/@robertlaroccx:matrix.org"
     - name: github
       url: "https://github.com/robertlarocca"
     - name: linkedin
