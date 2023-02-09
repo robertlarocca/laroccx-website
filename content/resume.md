@@ -17,7 +17,7 @@ draft: false
 
 ### Linux System Administrator
 
-**GAN, Miami, FL — `2021-Present`**
+**GAN, Miami, FL — `2021-2022`**
 
 - Check back soon to follow my exciting journey into the online gaming industry.
 

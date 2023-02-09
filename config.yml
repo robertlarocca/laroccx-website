@@ -71,10 +71,8 @@ params:
   #   Content: "Welcome to LaRoccx"
 
   socialIcons:
-    - name: email
-      url: "mailto:robert@laroccx.com?subject=Hello World!"
     - name: matrix
-      url: "https://matrix.to/#/@robertlaroccx:matrix.org"
+      url: "https://matrix.to/#/@robertlarocca:beeper.com"
     - name: github
       url: "https://github.com/robertlarocca"
     - name: linkedin
