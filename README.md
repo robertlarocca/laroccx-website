@@ -5,7 +5,7 @@ The public website and source code for [www.laroccx.com](https://www.laroccx.com
 ## Test website with Hugo server
 
 ```shell
-hugo server -D -E -F
+hugo server --disableFastRender -D -E -F
 ```
 
 ## Build production website with Hugo

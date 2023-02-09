@@ -1,0 +1,52 @@
+# EditorConfig is awesome: https://editorconfig.org
+
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# HTML/CSS Style Guide:
+# - https://google.github.io/styleguide/htmlcssguide.html
+[*.{htm,html,css}]
+indent_style = space
+indent_size = 2
+
+[*.{j2,jinja2}]
+indent_style = tab
+indent_size = 4
+
+[*.{js,json}]
+indent_style = space
+indent_size = 2
+
+[Makefile]
+indent_style = tab
+
+[*.md]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = false
+
+# Python Style Guide:
+# - https://google.github.io/styleguide/pyguide.html
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Shell Style Guide:
+# - https://google.github.io/styleguide/shellguide.html
+[*.sh]
+indent_style = tab
+indent_size = 2
+
+[*.sql]
+indent_style = tab
+indent_size = 2
+
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2

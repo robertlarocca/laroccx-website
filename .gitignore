@@ -1,0 +1,97 @@
+# You should customize this list as applicable to this project.
+#
+# Learn more about .gitignore:
+# - https://git-scm.com/docs/gitignore
+# - https://github.com/github/gitignore
+#
+
+# Ansible
+*.retry
+
+# Backup
+*.bak
+*.gho
+*.orig
+*.tmp
+
+# GPG
+secring.*
+
+# SVN
+.svn/
+
+# Plain-text passwords
+#
+# Consider encrypting files with private information using
+# Ansible Vault for real security not just obscurity:
+# - https://docs.ansible.com/ansible/latest/vault_guide/index.html
+#
+*.passwd
+*.secret
+**/.passwd/
+gandi-livedns.conf
+gandi-livedns.key
+
+# Hugo
+.hugo_build.lock
+
+# Log files
+*.log
+*.log[0-9]
+
+# JetBrains IDEs
+.idea_modules/
+.idea/
+*.iws
+out/
+
+# Sublime Text
+*.stTheme.cache
+*.sublime-workspace
+*.tmlanguage.cache
+*.tmPreferences.cache
+GitHub.sublime-settings
+
+# Visual Studio Code
+.history/
+.vscode/
+*.vsix
+
+# Xcode
+*.xccheckout
+*.xcscmblueprint
+xcuserdata/
+
+# macOS
+._*
+.apdisk
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.DS_Store
+.fseventsd
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+Icon\r\r
+Network Trash Folder
+Temporary Items
+
+# Windows
+[Dd]esktop.ini
+*.cab
+*.lnk
+*.msi
+*.msix
+*.msm
+*.msp
+*.stackdump
+$RECYCLE.BIN/
+ehthumbs_vista.db
+ehthumbs.db
+Thumbs.db
+Thumbs.db:encryptable
