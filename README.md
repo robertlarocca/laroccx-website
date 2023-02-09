@@ -1,4 +1,4 @@
-# robertlarocca.github.io
+# www.laroccx.com
 
 The public website and source code for [www.laroccx.com](https://www.laroccx.com) generated with Hugo.
 
@@ -16,7 +16,7 @@ hugo --cleanDestinationDir --forceSyncStatic --gc
 
 ## Sync changes to web server
 
-If hosting this website using GitHub Pages, just use `git commit -a` and `git push` the changes.
+If hosting this website using GitHub Pages use `git commit` and `git push` the changes.
 
 ```shell
 rsync -av doc/ root@nginx.example.com:/var/www/html
