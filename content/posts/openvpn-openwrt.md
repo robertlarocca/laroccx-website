@@ -1,6 +1,6 @@
 ---
 author: "Robert LaRocca"
-title: "How to Deploy an OpenVPN Server on OpenWrt 19.07"
+title: "How to Deploy an OpenVPN Server on OpenWrt 22.03"
 date: 2021-06-20T03:15:00-04:00
 categories:
   - server
@@ -15,7 +15,7 @@ tags:
 draft: false
 ---
 
-📌 This should also work on the current `OpenWrt 21.02` release candidate.
+📌 This guild also works with OpenWrt `19.07` and `21.02` releases.
 
 This guide outlines how to configure an OpenWrt gateway as a OpenVPN server, which is perfect for providing secure remote access to your local network from anywhere.
 <!--more-->
@@ -243,4 +243,4 @@ In some cases OpenVPN won't start until the OpenWrt device is rebooted. I suspec
 
 🎗 I should really file a bug report with the OpenWrt package maintainer.
 
-You should now have a working OpenVPN remote access server deployed on OpenWrt. If, you have any questions or would like help troubleshooting issues, contact me on [Matrix](https://matrix.to/#/@robert:laroccx.com)!
+You should now have a working OpenVPN remote access server deployed on OpenWrt. If, you have any questions or would like help troubleshooting issues, contact me on [Matrix](https://matrix.to/#/@robertlarocca:beeper.com)!

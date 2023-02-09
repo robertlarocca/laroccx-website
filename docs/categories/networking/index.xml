@@ -13,12 +13,12 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Jun 2021 03:15:00 -0400</lastBuildDate><atom:link href="https://www.laroccx.com/categories/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to Deploy an OpenVPN Server on OpenWrt 19.07</title>
+      <title>How to Deploy an OpenVPN Server on OpenWrt 22.03</title>
       <link>https://www.laroccx.com/posts/openvpn-openwrt/</link>
       <pubDate>Sun, 20 Jun 2021 03:15:00 -0400</pubDate>
       
       <guid>https://www.laroccx.com/posts/openvpn-openwrt/</guid>
-      <description>&lt;p&gt;📌 This should also work on the current &lt;code&gt;OpenWrt 21.02&lt;/code&gt; release candidate.&lt;/p&gt;
+      <description>&lt;p&gt;📌 This guild also works with OpenWrt &lt;code&gt;19.07&lt;/code&gt; and &lt;code&gt;21.02&lt;/code&gt; releases.&lt;/p&gt;
 &lt;p&gt;This guide outlines how to configure an OpenWrt gateway as a OpenVPN server, which is perfect for providing secure remote access to your local network from anywhere.&lt;/p&gt;</description>
     </item>
     
