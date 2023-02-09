@@ -71,12 +71,12 @@ params:
   #   Content: "Welcome to LaRoccx"
 
   socialIcons:
-    - name: matrix
-      url: "https://matrix.to/#/@robertlarocca:beeper.com"
     - name: github
       url: "https://github.com/robertlarocca"
     - name: linkedin
       url: "https://www.linkedin.com/in/robert-larocca-a48bb4209"
+    - name: matrix
+      url: "https://matrix.to/#/@robertlarocca:beeper.com"
     - name: twitter
       url: "https://twitter.com/robertlaroccx"
 
