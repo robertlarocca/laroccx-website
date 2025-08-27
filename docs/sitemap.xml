@@ -35,10 +35,10 @@
     <loc>https://www.laroccx.com/posts/bash-syntax/</loc>
     <lastmod>2021-07-08T03:45:00-04:00</lastmod>
   </url><url>
-    <loc>https://www.laroccx.com/tags/development/</loc>
+    <loc>https://www.laroccx.com/categories/development/</loc>
     <lastmod>2021-07-08T03:45:00-04:00</lastmod>
   </url><url>
-    <loc>https://www.laroccx.com/categories/development/</loc>
+    <loc>https://www.laroccx.com/tags/development/</loc>
     <lastmod>2021-07-08T03:45:00-04:00</lastmod>
   </url><url>
     <loc>https://www.laroccx.com/tags/scripting/</loc>
@@ -68,10 +68,10 @@
     <loc>https://www.laroccx.com/categories/self-hosted/</loc>
     <lastmod>2021-06-20T03:15:00-04:00</lastmod>
   </url><url>
-    <loc>https://www.laroccx.com/tags/server/</loc>
+    <loc>https://www.laroccx.com/categories/server/</loc>
     <lastmod>2021-06-20T03:15:00-04:00</lastmod>
   </url><url>
-    <loc>https://www.laroccx.com/categories/server/</loc>
+    <loc>https://www.laroccx.com/tags/server/</loc>
     <lastmod>2021-06-20T03:15:00-04:00</lastmod>
   </url><url>
     <loc>https://www.laroccx.com/tags/hugo/</loc>
